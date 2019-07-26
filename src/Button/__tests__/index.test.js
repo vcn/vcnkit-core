@@ -32,6 +32,37 @@ describe('Button', () => {
         expect(tree).toHaveStyleRule('color', '#E53935');
     });
     
+    test('Calls click-handler when clicked', () => {
+        const handleClick = jest.fn();
+
+        const button = mount(
+            <Button.Primary
+                onClick={ handleClick }
+            >
+                PrimaryButton
+            </Button.Primary>
+        );
+
+        button.find('button').getDOMNode().dispatchEvent(new MouseEvent('click'));
+        expect(handleClick.mock.calls.length).toEqual(0);
+    });
+
+    test('Does not call click-handler when disabled', () => {
+        const handleClick = jest.fn();
+
+        const button = mount(
+            <Button.Primary
+                onClick={ handleClick }
+                disabled
+            >
+                PrimaryButton
+            </Button.Primary>
+        );
+
+        button.find('button').getDOMNode().dispatchEvent(new MouseEvent('click'));
+        expect(handleClick.mock.calls.length).toEqual(0);
+    });
+
     test('Renders a link', () => {
         const href = 'https://www.google.com';
         const target = '_blank';
