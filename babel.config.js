@@ -4,7 +4,7 @@ module.exports = {
         [
             '@babel/preset-env',
             {
-                modules: process.env.BABEL_ENV === 'cjs' ? 'commonjs' : false,
+                modules: ['cjs', 'test'].includes(process.env.BABEL_ENV) ? 'commonjs' : false,
             },
         ],
     ],
@@ -25,8 +25,20 @@ module.exports = {
         '@babel/plugin-transform-object-assign',
     ],
     env: {
-        cjs: {},
-        es: {},
+        cjs: {
+            ignore: [
+                '**/__tests__',
+                '**/*.test.js',
+                '**/*.spec.js',  
+            ],
+        },
+        es: {
+            ignore: [
+                '**/__tests__',
+                '**/*.test.js',
+                '**/*.spec.js',  
+            ],
+        },
         development: {
             plugins: [
                 [
@@ -41,6 +53,16 @@ module.exports = {
         },
         test: {
             sourceMaps: 'both',
+            plugins: [
+                [
+                    'babel-plugin-module-resolver',
+                    {
+                        alias: {
+                            '@vcnkit/core': './src',
+                        },
+                    },
+                ],
+            ],
         },
     }
 }
