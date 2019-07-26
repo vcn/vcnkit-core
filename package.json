@@ -1,0 +1,74 @@
+{
+  "name": "@vcnkit/core",
+  "description": "VCNKit Core UI Components",
+  "version": "0.0.0",
+  "private": false,
+  "author": "VCN Verzekerings Combinatie Nederland B.V.",
+  "maintainers": [
+    "Freek Post <fpost@vcn.nl>"
+  ],
+  "keywords": [
+    "vcn",
+    "vcnkit",
+    "components",
+    "ui",
+    "library"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vcn/vcnkit-core"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/vcn/vcnkit-core/issues",
+  "engines": {
+    "node": ">8.0.0"
+  },
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:es && yarn build:copy",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel ./src --out-dir ./dist",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel ./src --out-dir ./dist/es",
+    "build:copy": "cross-env NODE_ENV=production node ./scripts/copy.js",
+    "prebuild": "rimraf dist",
+    "release": "yarn build && npm publish dist --tag latest",
+    "release-canary": "yarn build && npm publish dist --tag canary",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "styled-components": "^4.3.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-docs": "^5.2.0-alpha.0",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "cross-env": "^5.2.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "rimraf": "^2.6.3",
+    "styled-components": "^4.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
