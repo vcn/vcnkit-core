@@ -80,24 +80,24 @@ export default styled(Base)`
         color:       ${ (props.theme.vcnkit && props.theme.vcnkit.textColor) || 'hsla(0, 0%, 0%, .87)' };
     ` }
     
-    &:not(:disabled):not([aria-disabled]) {
-        cursor: pointer;
+    &::-moz-focus-inner {
+        border: none;
+    }
 
-        &:hover, &:focus {
-            background: ${ props => (props.theme.vcnkit && props.theme.vcnkit.focusColor) || 'hsla(0, 0%, 0%, .06)' };
-        }
+    &:focus {
+        outline: none;
     }
     
     &:disabled, &[aria-disabled] {
         color:  ${ props => (props.theme.vcnkit && props.theme.vcnkit.disabledColor) || 'hsla(0, 0%, 0%, .12)' };
         cursor: not-allowed;
     }
-    
-    &:focus {
-        outline: none;
-    }
-    
-    &::-moz-focus-inner {
-        border: none;
+
+    &:not(:disabled):not([aria-disabled]) {
+        cursor: pointer;
+
+        &:hover, &:focus {
+            background: ${ props => (props.theme.vcnkit && props.theme.vcnkit.focusColor) || 'hsla(0, 0%, 0%, .06)' };
+        }
     }
 `;
