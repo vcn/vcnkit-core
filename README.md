@@ -60,6 +60,31 @@ const Component = () => (
 );
 ```
 
+### Icons
+
+```jsx
+import { Info, Flask } from '@vcnkit/core/Icons';
+
+const Component = () => (
+    <>
+        <Info />
+        <Flash />
+    </>
+);
+```
+
+### MessageBar
+
+```jsx
+import * as MessageBar from '@vcnkit/core/MessageBar';
+
+const Component = () => (
+    <MessageBar.Info>
+        You are now using the MessageBar component.
+    </MessageBar.Info>
+);
+```
+
 ## Storybook
 
 ```sh
