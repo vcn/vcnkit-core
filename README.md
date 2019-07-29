@@ -50,11 +50,12 @@ const Component = () => (
 
 ```jsx
 import ActionBar from '@vcnkit/core/ActionBar';
+import * as Button from '@vcnkit/core/Button';
 
 const Component = () => (
     <ActionBar>
-        <button>Button 1</button>
-        <button>Button 2</button>
+        <Button.Primary>Button 1</Button.Primary>
+        <Button.Primary>Button 2</Button.Primary>
     </ActionBar>
 );
 ```
