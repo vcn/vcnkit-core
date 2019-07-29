@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionBar renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  min-height: 3.25rem;
+  box-sizing: border-box;
+  padding: .5rem 1rem .5rem 1.5rem;
+}
+
+.c0 > * {
+  margin: 0 0 0 .5rem;
+}
+
+<div
+  className="c0"
+>
+  <button>
+    Button 1
+  </button>
+  <button>
+    Button 2
+  </button>
+</div>
+`;
