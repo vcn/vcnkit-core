@@ -7,6 +7,7 @@ export { default as Business } from './Business';
 export { default as Close } from './Close';
 export { default as ContactMail } from './ContactMail';
 export { default as ContactPhone } from './ContactPhone';
+export { default as Download } from './Download';
 export { default as Email } from './Email';
 export { default as Flask } from './Flask';
 export { default as Feedback } from './Feedback';
