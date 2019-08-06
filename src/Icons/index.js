@@ -20,6 +20,7 @@ export { default as Money } from './Money';
 export { default as MarkUnreadMailbox } from './MarkUnreadMailbox';
 export { default as Message } from './Message';
 export { default as OpenInNew } from './OpenInNew';
+export { default as Pdf } from './Pdf';
 export { default as Person } from './Person';
 export { default as Phone } from './Phone';
 export { default as Place } from './Place';
