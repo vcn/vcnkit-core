@@ -10,21 +10,27 @@ const IconContainer = styled.div`
     display:        flex;
     flex-direction: row;
     flex-wrap:      wrap;
+
     font-family: "Roboto", sans-serif;
     font-size:   .875rem;
     color:       hsla(0, 0%, 0%, .87);
+
     svg {
         width:  2rem;
         height: 2rem;
+
         fill: hsla(0, 0%, 0%, .87);
     }
+
     & > div {
         display:         flex;
         flex-direction:  column;
         align-items:     center;
         justify-content: center;
+
         height: 8rem;
         width:  8rem;
+
         & > span {
             margin: 1rem 0 0;
         }

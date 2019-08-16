@@ -12,7 +12,11 @@ const defaultTheme = {
     opaqueDisabledColor: '#E0E0E0',
     focusColor:          'hsla(0, 0%, 0%, .06)',
 
-    destructiveColor: '#E53935',
+    infoColor:         '#D3DFEC',
+    experimentalColor: '#7E57C2',
+    warningColor:      '#EFE1B3',
+    attentionColor:    '#C26565',
+    destructiveColor:  '#E53935',
 
     inactiveScrollColor: 'hsla(0, 0%, 0%, .12)',
     activeScrollColor:   'hsla(0, 0%, 0%, .36)',
@@ -22,11 +26,11 @@ const defaultTheme = {
 
     iconColor:         'hsla(0, 0%, 0%, .57)',
     disabledIconColor: 'hsla(0, 0%, 0%, .17)',
-    invertedIconColor: '#FFF',
+    invertedIconColor: '#FFFFFF',
 
     textColor:               'hsla(0, 0%, 0%, .87)',
     subtleTextColor:         'hsla(0, 0%, 0%, .67)',
-    invertedTextColor:       '#FFF',
+    invertedTextColor:       '#FFFFFF',
     invertedSubtleTextColor: 'hsla(0, 100%, 100%, .87)',
 };
 

@@ -8,11 +8,11 @@ export default props => (
         { ...props }
     >
         <path
-            d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
         />
         <path
+            d="M0 0h24v24H0z"
             fill="none"
-            d="M0 0h24v24H0V0z"
         />
     </svg>
 );

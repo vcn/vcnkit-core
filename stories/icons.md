@@ -5,11 +5,12 @@ Collection of SVG icons.
 ### Basic usage
 
 ```jsx
-import { KeyboardArrowUp } from '@vcnkit/core/Icons';
+import { Info, Flask } from '@vcnkit/core/Icons';
 
 const Component = () => (
     <>
-        <KeyboardArrowUp />
+        <Info />
+        <Flash />
     </>
 );
 ```
