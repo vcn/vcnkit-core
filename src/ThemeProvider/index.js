@@ -7,6 +7,9 @@ const defaultTheme = {
     backgroundColor:      '#F5F5F5',
     paperBackgroundColor: '#FFFFFF',
 
+    chipColor:         '#EEEEEE',
+    inactiveChipColor: '#FAFAFA',
+
     dividerColor:        'hsla(0, 0%, 0%, .08)',
     disabledColor:       'hsla(0, 0%, 0%, .12)',
     opaqueDisabledColor: '#E0E0E0',
