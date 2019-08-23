@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Base = ({ className, onClick, href, disabled, children, type = 'button', ...rest }) => {
+const Button = ({ className, onClick, href, disabled, children, type = 'button', ...rest }) => {
 
     const handleClick = useCallback(
         (event, ...rest) => {
@@ -47,16 +47,8 @@ const Base = ({ className, onClick, href, disabled, children, type = 'button', .
     );
 };
 
-Base.propTypes = {
-    className: PropTypes.string,
-    onClick:   PropTypes.func,
-    href:      PropTypes.string,
-    disabled:  PropTypes.bool,
-    type:      PropTypes.oneOf([ 'button', 'submit' ]),
-    children:  PropTypes.node.isRequired,
-};
 
-export default styled(Base)`
+const Base = styled(Button)`
     background: transparent;
     
     display:         flex;
@@ -101,3 +93,14 @@ export default styled(Base)`
         }
     }
 `;
+
+Base.propTypes = {
+    className: PropTypes.string,
+    onClick:   PropTypes.func,
+    href:      PropTypes.string,
+    disabled:  PropTypes.bool,
+    type:      PropTypes.oneOf([ 'button', 'submit' ]),
+    children:  PropTypes.node.isRequired,
+};
+
+export default Base;

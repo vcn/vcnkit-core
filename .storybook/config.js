@@ -1,12 +1,14 @@
-import { configure, addParameters } from '@storybook/react';
+import React from 'react';
+import { configure, addParameters, addDecorator } from '@storybook/react';
 
-import theme from './theme';
+import theme, { GlobalStyle } from './theme';
 
-// automatically import all files ending in *.stories.js
-const req = require.context('../stories', true, /\.stories\.js$/);
-function loadStories() {
-  req.keys().forEach(filename => req(filename));
-}
+addDecorator(story => (
+  <>
+    <GlobalStyle />
+    { story() }
+  </>
+));
 
 addParameters({
   options: {
@@ -14,4 +16,10 @@ addParameters({
   },
 });
 
-configure(loadStories, module);
+configure(
+  [
+    require.context('../src', true, /\.stories\.mdx$/),
+    require.context('../src', true, /\.stories\.js$/),
+  ],
+  module,
+);
