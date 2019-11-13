@@ -1,5 +1,10 @@
 import * as React from 'react';
 
+/**
+ * @copyright Twitter
+ * @see https://twemoji.twitter.com/
+ * @license CC-BY-4.0
+ */
 export default props => (
     <svg
         width="24"
