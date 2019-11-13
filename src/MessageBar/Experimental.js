@@ -8,7 +8,7 @@ import Message from './Message';
 
 const Experimental = styled(Message)`
     ${ props => `
-        background: ${ (props.theme.vcnkit && props.theme.vcnkit.attentionColor) || '#7E57C2' };
+        background: ${ (props.theme.vcnkit && props.theme.vcnkit.experimentalColor) || '#7E57C2' };
         color:      ${ (props.theme.vcnkit && props.theme.vcnkit.invertedSubtleTextColor) || 'hsla(0, 100%, 100%, .87)' };
         
         svg {
