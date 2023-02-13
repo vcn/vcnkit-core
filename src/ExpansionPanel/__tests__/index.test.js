@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, cleanup, fireEvent, waitForElement } from '@testing-library/react';
+import { render, cleanup, fireEvent, waitFor } from '@testing-library/react';
 import 'jest-styled-components';
 import '@testing-library/jest-dom/extend-expect';
 
@@ -13,7 +13,7 @@ describe('ExpansionPanel', () => {
             <Panel.Panel>
                 <Panel.Header>Header</Panel.Header>
                 <Panel.Content>Content</Panel.Content>
-            </Panel.Panel>           
+            </Panel.Panel>
         );
 
         expect(asFragment()).toMatchSnapshot();
@@ -26,7 +26,7 @@ describe('ExpansionPanel', () => {
             <Panel.Panel>
                 <Panel.Header icon={ <CustomIcon /> }>Header</Panel.Header>
                 <Panel.Content>Content</Panel.Content>
-            </Panel.Panel>       
+            </Panel.Panel>
         );
 
         expect(getByText('CustomIcon')).toHaveTextContent('CustomIcon');
@@ -40,12 +40,12 @@ describe('ExpansionPanel', () => {
                 <Panel.Content>
                     <p>Child</p>
                 </Panel.Content>
-            </Panel.Panel>           
+            </Panel.Panel>
         );
 
         fireEvent.click(getByText('Header'));
 
-        const node = await waitForElement(() => getByText('Child'));
+        const node = await waitFor(() => getByText('Child'));
         expect(node).toHaveTextContent('Child');
     });
 
@@ -54,7 +54,7 @@ describe('ExpansionPanel', () => {
             <Panel.Panel expanded={ false }>
                 <Panel.Header>Header</Panel.Header>
                 <Panel.Content>Content</Panel.Content>
-            </Panel.Panel> 
+            </Panel.Panel>
         );
 
         expect(queryByText('Content')).not.toBeInTheDocument();
@@ -63,7 +63,7 @@ describe('ExpansionPanel', () => {
             <Panel.Panel expanded>
                 <Panel.Header>Header</Panel.Header>
                 <Panel.Content>Content</Panel.Content>
-            </Panel.Panel> 
+            </Panel.Panel>
         );
 
         expect(queryByText('Content')).toBeInTheDocument();

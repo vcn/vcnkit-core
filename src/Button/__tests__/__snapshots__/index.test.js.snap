@@ -12,8 +12,8 @@ exports[`Button Destructive button renders 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   font-size: .8125rem;
   font-weight: 500;
@@ -27,8 +27,7 @@ exports[`Button Destructive button renders 1`] = `
   border: none;
   border-radius: .125rem;
   font-family: Roboto,sans-serif;
-  color: hsla(0,0%,0%,.87);
-  color: #E53935;
+  color: hsla(0, 0%, 0%, .87);
 }
 
 .c0::-moz-focus-inner {
@@ -41,7 +40,7 @@ exports[`Button Destructive button renders 1`] = `
 
 .c0:disabled,
 .c0[aria-disabled] {
-  color: hsla(0,0%,0%,.12);
+  color: hsla(0, 0%, 0%, .12);
   cursor: not-allowed;
 }
 
@@ -51,11 +50,15 @@ exports[`Button Destructive button renders 1`] = `
 
 .c0:not(:disabled):not([aria-disabled]):hover,
 .c0:not(:disabled):not([aria-disabled]):focus {
-  background: hsla(0,0%,0%,.06);
+  background: hsla(0, 0%, 0%, .06);
+}
+
+.c1 {
+  color: #E53935;
 }
 
 <button
-  className="c0"
+  className="c0 c1"
   onClick={[Function]}
   type="button"
 >
@@ -75,8 +78,8 @@ exports[`Button Primary button renders 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   font-size: .8125rem;
   font-weight: 500;
@@ -90,8 +93,7 @@ exports[`Button Primary button renders 1`] = `
   border: none;
   border-radius: .125rem;
   font-family: Roboto,sans-serif;
-  color: hsla(0,0%,0%,.87);
-  color: #5282B5;
+  color: hsla(0, 0%, 0%, .87);
 }
 
 .c0::-moz-focus-inner {
@@ -104,7 +106,7 @@ exports[`Button Primary button renders 1`] = `
 
 .c0:disabled,
 .c0[aria-disabled] {
-  color: hsla(0,0%,0%,.12);
+  color: hsla(0, 0%, 0%, .12);
   cursor: not-allowed;
 }
 
@@ -114,11 +116,15 @@ exports[`Button Primary button renders 1`] = `
 
 .c0:not(:disabled):not([aria-disabled]):hover,
 .c0:not(:disabled):not([aria-disabled]):focus {
-  background: hsla(0,0%,0%,.06);
+  background: hsla(0, 0%, 0%, .06);
+}
+
+.c1 {
+  color: #5282B5;
 }
 
 <button
-  className="c0"
+  className="c0 c1"
   onClick={[Function]}
   type="button"
 >
