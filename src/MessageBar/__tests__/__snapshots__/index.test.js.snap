@@ -17,11 +17,9 @@ exports[`MessageBar Error message renders correctly 1`] = `
   padding: .625rem 1.5rem;
   border-radius: .125rem;
   min-height: 2rem;
-  background: hsla(0,0%,0%,.03);
+  background: hsla(0, 0%, 0%, .03);
   font-family: "Roboto",sans-serif;
-  color: hsla(0,0%,0%,.67);
-  background: #C26565;
-  color: hsla(0,100%,100%,.87);
+  color: hsla(0, 0%, 0%, .67);
 }
 
 .c0 svg {
@@ -34,19 +32,20 @@ exports[`MessageBar Error message renders correctly 1`] = `
 }
 
 .c0 svg {
-  fill: hsla(0,0%,0%,.57);
+  fill: hsla(0, 0%, 0%, .57);
 }
 
-.c0 svg {
+.c1 {
+  background: #C26565;
+  color: hsla(0, 100%, 100%, .87);
+}
+
+.c1 svg {
   fill: #FFFFFF;
 }
 
-.c0 .c1 {
-  color: #FFFFFF;
-}
-
 <div
-  className="c0"
+  className="c0 c1"
 >
   <svg
     height="24"
@@ -84,11 +83,9 @@ exports[`MessageBar Experimental message renders correctly 1`] = `
   padding: .625rem 1.5rem;
   border-radius: .125rem;
   min-height: 2rem;
-  background: hsla(0,0%,0%,.03);
+  background: hsla(0, 0%, 0%, .03);
   font-family: "Roboto",sans-serif;
-  color: hsla(0,0%,0%,.67);
-  background: #7E57C2;
-  color: hsla(0,100%,100%,.87);
+  color: hsla(0, 0%, 0%, .67);
 }
 
 .c0 svg {
@@ -101,19 +98,20 @@ exports[`MessageBar Experimental message renders correctly 1`] = `
 }
 
 .c0 svg {
-  fill: hsla(0,0%,0%,.57);
+  fill: hsla(0, 0%, 0%, .57);
 }
 
-.c0 svg {
+.c1 {
+  background: #7E57C2;
+  color: hsla(0, 100%, 100%, .87);
+}
+
+.c1 svg {
   fill: #FFFFFF;
 }
 
-.c0 .c1 {
-  color: #FFFFFF;
-}
-
 <div
-  className="c0"
+  className="c0 c1"
 >
   <svg
     height="24"
@@ -147,10 +145,9 @@ exports[`MessageBar Info message renders correctly 1`] = `
   padding: .625rem 1.5rem;
   border-radius: .125rem;
   min-height: 2rem;
-  background: hsla(0,0%,0%,.03);
+  background: hsla(0, 0%, 0%, .03);
   font-family: "Roboto",sans-serif;
-  color: hsla(0,0%,0%,.67);
-  background: #D3DFEC;
+  color: hsla(0, 0%, 0%, .67);
 }
 
 .c0 svg {
@@ -163,11 +160,15 @@ exports[`MessageBar Info message renders correctly 1`] = `
 }
 
 .c0 svg {
-  fill: hsla(0,0%,0%,.57);
+  fill: hsla(0, 0%, 0%, .57);
+}
+
+.c1 {
+  background: #D3DFEC;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 >
   <svg
     height="24"
@@ -205,9 +206,9 @@ exports[`MessageBar Normal message renders correctly 1`] = `
   padding: .625rem 1.5rem;
   border-radius: .125rem;
   min-height: 2rem;
-  background: hsla(0,0%,0%,.03);
+  background: hsla(0, 0%, 0%, .03);
   font-family: "Roboto",sans-serif;
-  color: hsla(0,0%,0%,.67);
+  color: hsla(0, 0%, 0%, .67);
 }
 
 .c0 svg {
@@ -220,7 +221,7 @@ exports[`MessageBar Normal message renders correctly 1`] = `
 }
 
 .c0 svg {
-  fill: hsla(0,0%,0%,.57);
+  fill: hsla(0, 0%, 0%, .57);
 }
 
 <div
@@ -262,10 +263,9 @@ exports[`MessageBar Warning message renders correctly 1`] = `
   padding: .625rem 1.5rem;
   border-radius: .125rem;
   min-height: 2rem;
-  background: hsla(0,0%,0%,.03);
+  background: hsla(0, 0%, 0%, .03);
   font-family: "Roboto",sans-serif;
-  color: hsla(0,0%,0%,.67);
-  background: #EFE1B3;
+  color: hsla(0, 0%, 0%, .67);
 }
 
 .c0 svg {
@@ -278,11 +278,15 @@ exports[`MessageBar Warning message renders correctly 1`] = `
 }
 
 .c0 svg {
-  fill: hsla(0,0%,0%,.57);
+  fill: hsla(0, 0%, 0%, .57);
+}
+
+.c1 {
+  background: #EFE1B3;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
 >
   <svg
     height="24"

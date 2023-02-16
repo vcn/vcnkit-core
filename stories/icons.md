@@ -10,7 +10,7 @@ import { Info, Flask } from '@vcnkit/core/Icons';
 const Component = () => (
     <>
         <Info />
-        <Flash />
+        <Flask />
     </>
 );
 ```

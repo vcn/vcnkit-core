@@ -21,6 +21,18 @@ module.exports = {
                 loose: true,
             },
         ],
+        [
+            '@babel/plugin-proposal-private-methods',
+            {
+                loose: true,
+            },
+        ],
+        [
+            '@babel/plugin-proposal-private-property-in-object',
+            {
+                loose: true,
+            }
+        ],
         '@babel/plugin-transform-runtime',
         '@babel/plugin-transform-object-assign',
     ],
@@ -29,14 +41,14 @@ module.exports = {
             ignore: [
                 '**/__tests__',
                 '**/*.test.js',
-                '**/*.spec.js',  
+                '**/*.spec.js',
             ],
         },
         es: {
             ignore: [
                 '**/__tests__',
                 '**/*.test.js',
-                '**/*.spec.js',  
+                '**/*.spec.js',
             ],
         },
         development: {
